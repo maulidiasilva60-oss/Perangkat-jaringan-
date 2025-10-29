@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunia Perangkat Jaringan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">🌐 NetDev</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#beranda" class="nav-link">Beranda</a></li>
+                <li class="nav-item"><a href="#perangkat" class="nav-link">Perangkat</a></li>
+                <li class="nav-item"><a href="#kuis" class="nav-link">Kuis</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="beranda" class="hero">
+            <div class="hero-content">
+                <h1>Jelajahi Dunia Perangkat Jaringan by SILVA</h1>
+                <p>Memahami perangkat yang menjadi tulang punggung konektivitas digital kita. Dari router hingga access point, pelajari semuanya di sini.</p>
+                <a href="#perangkat" class="btn btn-primary">Mulai Belajar</a>
+            </div>
+        </section>
+
+        <section id="perangkat" class="container">
+            <h2 class="section-title">Jenis-Jenis Perangkat Jaringan</h2>
+            <p class="section-subtitle">Klik pada kartu untuk melihat detailnya.</p>
+            
+            <div class="devices-grid">
+                <!-- Router -->
+                <div class="card" data-device="router">
+                    <div class="card-icon">🔀</div>
+                    <h3>Router</h3>
+                    <p>Polisi lalu lintas jaringan yang mengarahkan data.</p>
+                </div>
+
+                <!-- Switch -->
+                <div class="card" data-device="switch">
+                    <div class="card-icon">🔌</div>
+                    <h3>Switch</h3>
+                    <p>Penyambung cerdas untuk banyak perangkat dalam satu jaringan lokal.</p>
+                </div>
+
+                <!-- Modem -->
+                <div class="card" data-device="modem">
+                    <div class="card-icon">📡</div>
+                    <h3>Modem</h3>
+                    <p>Jembatan antara jaringan Anda dan Internet Service Provider (ISP).</p>
+                </div>
+
+                <!-- Access Point -->
+                <div class="card" data-device="access-point">
+                    <div class="card-icon">📶</div>
+                    <h3>Access Point (AP)</h3>
+                    <p>Perangkat yang menciptakan jaringan Wi-Fi.</p>
+                </div>
+
+                <!-- Repeater -->
+                <div class="card" data-device="repeater">
+                    <div class="card-icon">🔄</div>
+                    <h3>Repeater</h3>
+                    <p>Penguat sinyal Wi-Fi untuk memperluas jangkauan.</p>
+                </div>
+
+                <!-- Firewall -->
+                <div class="card" data-device="firewall">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Firewall</h3>
+                    <p>Pengaman jaringan yang menyaring lalu lintas berbahaya.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kuis" class="quiz-section container">
+            <h2 class="section-title">Tes Pengetahuan Anda</h2>
+            <div class="quiz-container" id="quiz">
+                <div class="quiz-header">
+                    <h3 id="question">Pertanyaan akan muncul di sini</h3>
+                    <div class="progress-bar">
+                        <div id="progress"></div>
+                    </div>
+                </div>
+                <div class="quiz-body">
+                    <div id="answer-buttons" class="answer-buttons">
+                        <!-- Tombol jawaban akan dibuat oleh JavaScript -->
+                    </div>
+                    <button id="next-btn" class="btn btn-secondary hide">Lanjut</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Dunia Perangkat Jaringan. Dibuat dengan ❤️ untuk pembelajaran.</p>
+    </footer>
+
+    <!-- Modal untuk Detail Perangkat -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
